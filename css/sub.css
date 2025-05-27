@@ -1,0 +1,509 @@
+:root {
+  --point--color1: #cad401;
+  --point--color2: #019fe8;
+  --txt-color-400: #888;
+  --txt-color-500: #191b1d;
+  --txt-color-600: #222;
+}
+
+.sub_container .inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sub_container {
+  padding-top: 120px;
+}
+.sub_container .contents {
+  padding: 120px 0;
+  position: relative;
+}
+
+/* 로그인 페이지 */
+.login_page .inner {
+  max-width: 492px;
+  min-width: 360px;
+  padding: 0 16px;
+}
+.login_page .logo_wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  gap: 10px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.login_page .logo_wrap h2 {
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+.login_page .logo_wrap h2 a {
+  background: url(../images/set_new_logo.svg) no-repeat 0 0;
+  display: block;
+  width: 120px;
+  height: 20px;
+}
+
+.login_page .login_type {
+  display: flex;
+}
+.login_page .login_type>li>a {
+  width: 105px;
+  display: block;
+  text-align: center;
+  line-height: 28px;
+  padding-bottom: 1px;
+  font-size: 12px;
+  color: #9fa1a7;
+  font-weight: 700;
+  transition: all 0.15s;
+}
+.login_page .login_type>li:not(:first-child) a {
+  border-bottom: 1px solid #e5e8eb;
+}
+.login_page .login_type .active a {
+  border-bottom: 2px solid #17191d;
+  color: #17191d;
+}
+.login_page .login_type li:hover a {
+  color: #07f;
+}
+
+.login_page .login_area {
+  margin-top: 80px;
+}
+.login_page .login_area .input_wrap1 {
+  margin-bottom: 12px;
+}
+.login_page .login_area .input_wrap2 {
+  margin-bottom: 3px;
+}
+.login_page .login_area input[type="text"],
+.login_page .login_area input[type="password"] {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #e5e8eb;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.15s;
+}
+.login_page .login_area input[type="text"]:focus,
+.login_page .login_area input[type="password"]:focus {
+  border: 3px solid #07f;
+}
+.login_page .login_area input[type="text"]::placeholder,
+.login_page .login_area input[type="password"]::placeholder {
+  font-weight: 600;
+}
+
+.login_page .login_area .checkbox_wrap {
+  margin-top: 10px;
+}
+.login_page .login_area .checkbox_wrap label {
+  font-size: 12px;
+  color: #666;
+}
+.login_page .login_area .login_btn {
+  display: block;
+  line-height: 60px;
+  background: #17191d;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.login_page .link_wrap {
+  display: flex;
+  gap: 0 10px;
+  padding-top: 12px;
+}
+.login_page .link_wrap > li > a {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #737881;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* location 공통 */
+.sub_top .location {
+  display: flex;
+  justify-content: end;
+  gap: 0 25px;
+  font-size: 15px;
+  color: #666;
+}
+.sub_top .location span:first-child {
+  position: relative;
+}
+.sub_top .location span:first-child::before {
+  content: '';
+  position: absolute;
+  left: -50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 15px;
+  background: url(../images/breadcrumbs_home.png) no-repeat 50% 50% /  contain;
+}
+.sub_top .location span + span {
+  position: relative;
+}
+.sub_top .location span + span::before {
+  content: '>';
+  position: absolute;
+  top: 0;
+  left: -14px;
+}
+
+/* 기업지배구조 corporate-governance */
+.sub_top .inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sub_top h2 {
+  font-size: 66px;
+  font-weight: 700;
+}
+
+.contents .tit_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding: 25px 0;
+}
+.contents .tit_wrap.council {
+  margin-top: 20px;
+  border-top: none;
+}
+.contents .tit_wrap.stock_holder_total {
+  height: 108px;
+}
+.contents .tit_wrap h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.contents .stock_total {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.contents .stock_total strong {
+  font-size: 30px;
+  font-weight: 700;
+}
+.contents .tit_wrap .date {
+  font-size: 15px;
+}
+
+.stock_wrap {
+  margin-top: 55px;
+}
+
+/* 기업지배구조 표 */
+.tbl.council td {
+  height: 184px;
+  text-align: center;
+}
+.tbl.council tr:last-child td {
+  border-bottom: 1px solid #eaeaea;
+  word-break: keep-all;
+}
+.tbl.council tr:nth-last-child(2) td{
+  border-bottom: 1px solid #eaeaea;
+}
+.tbl.council tr:last-child {
+  color: var(--gray-600);
+  font-weight: 400;
+}
+
+.tbl.council tbody {
+  word-break: keep-all;
+}
+.tbl.council tbody td {
+  padding: 15px 10px;
+}
+.tbl.council tbody td span {
+  display: block;
+  line-height: 1.8;
+}
+
+.tbl.council .col1 {
+  width: 23%;
+}
+.tbl.council .col3 {
+  width: 26%;
+}
+.tbl.council .col4 {
+  width: 43%;
+}
+
+/* 공고 게시판 서브페이지 */
+.sub_container.account .contents {
+  padding-top: 30px;
+}
+.sub_container.account .sub_top h2 {
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+.sub_top .inner {
+  position: relative;
+}
+.sub_top .board_category_wrap {
+  margin-bottom: 35px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding: 30px;
+}
+.sub_top .board_category {
+  display: flex;
+  justify-content: space-between;
+}
+.sub_top .board_category li {
+  width: 100%;
+  text-align: center;
+}
+.sub_top .board_category li a {
+  display: block;
+  font-size: 21px;
+  color: #BABABB;
+  font-weight: 700;
+}
+.sub_top .board_category li.active a {
+  color: var(--txt-color-500);
+}
+.sub_top .board_category li + li {
+  position: relative;
+}
+.sub_top .board_category li + li::before {
+  content: '';
+  position: absolute;
+  left:0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background: #eaeaea;
+}
+
+.sub_top .write_btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--txt-color-600);
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* 공고 게시판 읽기 페이지 */
+.account_view .tit_wrap {
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  border-top: none;
+  border-bottom: none;
+  padding: 0;
+}
+.account_view .tit_wrap h3 {
+  margin-bottom: 15px;
+  font-size: 36px;
+}
+.account_view .tit_wrap .date {
+  font-size: 14px;
+  color: #aeaeae;
+  margin-bottom: 15px;
+}
+
+/* 공고 게시판 작성 페이지 */
+.account_write .tit_wrap {
+  margin-bottom: 20px;
+  border: none;
+}
+.account_write .required {
+  font-size: 15px;
+}
+.account_write .area {
+  border-bottom: none;
+}
+
+
+
+
+/* 태블릿 분기점 */
+@media (max-width: 1200px) {
+  .sub_container {
+    padding-top: 0;
+  }
+  .governance.sub_container .contents {
+    padding: 70px 0;
+  }
+  
+  .sub_top {
+    padding-top: 60px;
+  }
+  .sub_top h2 {
+    font-size: 46px;
+    padding-bottom: 0;
+  }
+
+  .contents .tit_wrap {
+    padding: 0;
+    height: 63px;
+  }
+  .contents .tit_wrap h3 {
+    font-size: 17px;
+  }
+  .contents .stock_total p {
+    font-size: 15px;
+  }
+  .contents .stock_total strong {
+    font-size: 19px;
+  }
+  .contents .tit_wrap.stock_holder_total {
+    height: 92px;
+  }
+  .contents .tit_wrap .date {
+    font-size: 13px;
+  }
+
+  .tbl.council tbody td {
+    padding: 18px 0;
+  }
+
+  .tbl.council .col1 {
+    width: 21%;
+  }
+  .tbl.council .col3 {
+    width: 25%;
+  }
+  .tbl.council .col4 {
+    width: 41%;
+  }
+
+  .account_view.sub_container .contents {
+    padding: 0 0 100px;
+  }
+  .sub_top .board_category_wrap {
+    padding: 10px;
+  }
+  .sub_top .board_category li a {
+    height: 63px;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .sub_top .board_category li + li::before {
+    height: 55px;
+  }
+
+  .account_view .sub_top {
+    padding-top: 60px;
+  }
+  .sub_container.account_view .sub_top h2 {
+    margin-bottom: 70px;
+  }
+  .account_view .tit_wrap h3 {
+    font-size: 36px;
+  }
+  .account_view .tit_wrap .date {
+    font-size: 14px;
+  }
+
+
+
+}
+
+/* 모바일 분기점 */
+@media (max-width: 767px) {
+  .login_page .inner {
+    padding: 0 15px;
+  }
+
+  .governance.sub_container .contents {
+    padding: 40px 0;
+  }
+  .sub_top {
+    padding-top: 50px;
+  }
+  .sub_top .location {
+    font-size: 13px;
+  }
+  .sub_top h2 {
+    font-size: 25px;
+    padding: 15px 0;
+  }
+  .sub_top .location span:first-child::before {
+    width: 14px;
+    height: 14px;
+
+  }
+
+  .contents .tit_wrap {
+    height: 60px;
+  }
+  .contents .tit_wrap h3 {
+    font-size: 16px;
+  }
+  .contents .stock_total p {
+    font-size: 14px;
+  }
+  .contents .stock_total strong {
+    font-size: 17px;
+  }
+  .contents .tit_wrap .date {
+    font-size: 14px;
+  }
+
+  .account.sub_container .contents {
+    padding: 30px 0 50px 0;
+  }
+  .sub_container.account .sub_top h2 {
+    margin-bottom: 40px;
+  }
+  .sub_top .board_category_wrap {
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  .sub_top .board_category li a {
+    padding: 5px;
+    font-size: 14px;
+    height: auto;
+  }
+  .sub_top .write_btn {
+    width: 124px;
+    right: 20px;
+    top: 60px;
+    margin-right: 0;
+    background: var(--txt-color-600);
+    color: #fff;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .account_view .sub_top {
+    padding-top: 100px;
+  }
+
+  .tbl.council tbody td {
+    padding: 18px 2px;
+  }
+
+  .account_write .tit_wrap p {
+    font-size: 16px;
+  }
+}
