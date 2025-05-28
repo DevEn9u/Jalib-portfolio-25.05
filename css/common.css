@@ -950,15 +950,19 @@ caption.nohead {
   font-size: 17px;
   padding: 25px 0;
 }
-.tbl tr:last-child {
+/* .tbl tr:last-child {
   color: var(--gray-600);
   font-weight: 700;
-}
-.tbl tr:last-child td {
+} */
+/* .tbl tr:last-child td {
   border-bottom: 1px solid #000;
 }
 .tbl tr:nth-last-child(2) td {
   border-bottom: 1px solid #000;
+} */
+.tbl tr .col2 {
+  text-align: right;
+  padding: 0 20px;
 }
 .tbl td {
   height: 50px;
@@ -977,9 +981,8 @@ caption.nohead {
   border-right: none;
 }
 
-.tbl .col1,
-.tbl .col3 {
-  width: 30%;
+.tbl .col1 {
+  width: 70%;
 }
 
 

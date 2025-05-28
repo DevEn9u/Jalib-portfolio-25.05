@@ -51,6 +51,40 @@
   left: -14px;
 }
 
+/* 소개 패이지 introduction */
+.contents .tit_wrap .work_total {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+  vertical-align: top;
+}
+.contents .tit_wrap .work_total #day_count {
+  font-size: 22px;
+  letter-spacing: -2px;
+  font-weight: 600;
+}
+.contents .profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.contents .profile .col_left {
+  padding-top: 100px;
+}
+.contents .profile .col_left p {
+
+  font-size: 30px;
+  padding-bottom: 55px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--txt-color-600);
+}
+.contents .profile .col_right {
+  width: calc(50% - 5px);
+}
+
+
+
 /* 기업지배구조 corporate-governance */
 .sub_top .inner {
   max-width: 1320px;
@@ -94,6 +128,7 @@
 }
 .contents .tit_wrap .date {
   font-size: 15px;
+  padding: 0 10px;
 }
 
 .stock_wrap {

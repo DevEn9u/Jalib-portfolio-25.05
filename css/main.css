@@ -560,10 +560,11 @@
 }
 #footer .footer_top {
   display: flex;
+  justify-content: space-between;
   padding: 50px 0;
 }
 #footer .col_left {
-  width: 50%;
+  width: 60%;
 }
 #footer .logo {
   width: 62px;
@@ -581,12 +582,12 @@
   margin-bottom: 30px;
 }
 
-#footer .col_right {
+/* #footer .col_right {
   width: 50%;
-}
+} */
 #footer .footer_menu {
   display: flex;
-  gap: 0 60px;
+  gap: 0 40px;
 }
 #footer .footer_menu > li > a {
   display: block;

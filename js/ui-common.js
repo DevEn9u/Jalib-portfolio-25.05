@@ -1,22 +1,27 @@
 $(function () {
   // header fixed
-  const header = $('#header')
+  const header = $("#header");
 
-  $(window).on('scroll', function() {
+  $(window).on("scroll", function () {
     let st = $(window).scrollTop();
 
     if (st > 0) {
-      header.addClass('fixed');
+      header.addClass("fixed");
     } else {
-      header.removeClass('fixed');
+      header.removeClass("fixed");
     }
   });
 
   $("#header .gnb>li").on("mouseenter", function () {
     $("#header").addClass("on");
   });
-  $('#header .gnb_wrap').on('mouseleave', function() {
-    $('#header').removeClass('on');
+  $("#header .gnb_wrap").on("mouseleave", function () {
+    $("#header").removeClass("on");
+  });
+
+  // a 태그 해제
+  $("#container").on("click", function (e) {
+    e.preventDefault();
   });
 
   // 사이드 메뉴 작동
@@ -117,8 +122,38 @@ $(function () {
   });
 
   // 게시판 카테고리 .board_category
-  $('.sub_top .board_category>li>a')
-    .on('click', function() {
-      $(this).parent().addClass('active').siblings().removeClass('active')
-    })
+  $(".sub_top .board_category>li>a").on("click", function () {
+    $(this).parent().addClass("active").siblings().removeClass("active");
+  });
+
+  // 기준 시작일 설정 (예: 2024년 1월 1일)
+  const startDate = new Date("2025-04-28");
+  const today = new Date();
+  // 시, 분, 초 제거하고 날짜로만 체크
+  startDate.setHours(0, 0, 0, 0);
+  today.setHours(0, 0, 0, 0);
+
+  // 날짜 차이 계산 (밀리초 → 일수로 변환)
+  const counter = document.getElementById("day_count");
+  // counter가 존재할 떄만 진행
+  if (counter) {
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    let current = 0;
+
+    const duration = 1000; // 전체 애니메이션 시간 (ms)
+    const frameRate = 60; // 초당 프레임
+    const totalFrames = Math.round((duration / 1000) * frameRate);
+    const increment = diffDays / totalFrames;
+
+    const countUp = setInterval(() => {
+      current += increment;
+      if (current >= diffDays) {
+        counter.textContent = diffDays;
+        clearInterval(countUp);
+      } else {
+        counter.textContent = Math.floor(current);
+      }
+    }, 1000 / frameRate);
+  }
 });

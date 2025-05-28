@@ -1,432 +1,449 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="format-detcntion" content="telephone=no">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="자립마케팅 강인구 매니저입니다.">
-  <meta name="keywords" content="자립마케팅">
-  <meta property="og:title" content="자립마케팅 강인구 매니저">
-  <meta property="og:type" content="website">
-  <!-- <meta property="og:url" content="http://kig1132.dothome.co.kr//"> -->
-  <meta property="og:site_name" content="자립마케팅 강인구 매니저">
-  <meta property="og:description" content="자립마케팅 강인구 매니저입니다.">
-  <link rel="shortcut icon" href="images/favicon/favicon.ico?v=2">
-  <link rel="apple-touch-icon-precomposed" href="images/favicon/favicon.ico?v=2">
-  <title>자립마케팅 강인구 매니저</title>
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.min.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
-  <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>">
-  <link rel="stylesheet" href="css/sub.css?v=<?php echo time(); ?>">
-  <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/ui-common.js?v=<?php echo time(); ?>"></script>
-</head>
-<body>
-  <div id="skip_navi">
-    <a href="#container">본문 바로가기</a>
-  </div>
-  <div id="wrap">
-    <header id="header">
-      <h1 class="logo">
-        <a href="index.html">
-          <img src="images/main_logo.png" alt="메인로고">
-        </a>
-      </h1>
-      <nav class="gnb_wrap">
-        <ul class="gnb">
-          <li>
-            <a href="#">강인구 매니저</a>
-            <ul class="depth2">
-              <li><a href="introduction.html">소개</a></li>
-              <li><a href="#">업적</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="first_meeting.html">첫 대면미팅</a>
-            <ul class="depth2">
-              <li><a href="corporate-governance.html">사랑해요</a></li>
-              <li><a href="#">자립마케팅</a></li>
-              <li><a href="#">하나다 팀</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="corporate-governance.html">개발 관련 기여</a>
-            <ul class="depth2">
-              <li><a href="corporate-governance.html">홈페이지 헤더 개선</a></li>
-              <li><a href="#">어드민 쇼츠 업로드</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">7-9월 목표</a>
-            <ul class="depth2">
-              <li><a href="free-board.html">자유게시판</a></li>
-              <li><a href="qna-board.html">QnA</a></li>
-              <li><a href="download-board.html">자료실</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <div class="lang_wrap">
-        <div class="sns_wrap">
-          <a href="https://blog.naver.com/dlsrnrk" target="_blank" class="blog"><img src="images/blog_icon.png" alt="블로그"></a>
-          <a href="https://www.instagram.com/river.in9/" target="_blank" class="instagram"><img src="images/instagram_icon.png" alt="인스타그램"></a>
-        </div>
-        <ul class="lang">
-          <li><a href="#" class="active">KOR</a></li>
-          <li><a href="#" class="eng">ENG</a></li>
-        </ul>
-        <button type="button" class="open_btn">
-          <span class="blind">메뉴 열기</span>
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-      <aside class="m_gnb_wrap">
-        <div class="scroll">
-          <ul class="m_gnb">
-          <li>
-            <a href="introduction.html">강인구 매니저</a>
-            <ul class="depth2">
-              <li><a href="introduction.html">소개</a></li>
-              <li><a href="#">업적</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="first_meeting.html">첫 대면미팅</a>
-            <ul class="depth2">
-              <li><a href="corporate-governance.html">사랑해요</a></li>
-              <li><a href="#">자립마케팅</a></li>
-              <li><a href="#">하나다 팀</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="corporate-governance.html">개발 관련 기여</a>
-            <ul class="depth2">
-              <li><a href="corporate-governance.html">홈페이지 헤더 개선</a></li>
-              <li><a href="#">어드민 쇼츠 업로드</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">7-9월 목표</a>
-            <ul class="depth2">
-              <li><a href="free-board.html">자유게시판</a></li>
-              <li><a href="qna-board.html">QnA</a></li>
-              <li><a href="download-board.html">자료실</a></li>
-            </ul>
-          </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="format-detcntion" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="자립마케팅 강인구 매니저입니다." />
+    <meta name="keywords" content="자립마케팅" />
+    <meta property="og:title" content="자립마케팅 강인구 매니저" />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="http://kig1132.dothome.co.kr/"> -->
+    <meta property="og:site_name" content="자립마케팅 강인구 매니저" />
+    <meta property="og:description" content="자립마케팅 강인구 매니저입니다." />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico?v=2" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/favicon/favicon.ico?v=2"
+    />
+    <title>자립마케팅 강인구 매니저</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="css/main.css?v=<?php echo time(); ?>" />
+    <link rel="stylesheet" href="css/sub.css?v=<?php echo time(); ?>" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/ui-common.js?v=<?php echo time(); ?>"></script>
+  </head>
+  <body>
+    <div id="skip_navi">
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+      <header id="header">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="images/main_logo.png" alt="메인로고" />
+          </a>
+        </h1>
+        <nav class="gnb_wrap">
+          <ul class="gnb">
+            <li>
+              <a href="introduction.html">강인구 매니저</a>
+              <ul class="depth2">
+                <li><a href="introduction.html">소개</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="meeting.html">성과</a>
+              <ul class="depth2">
+                <li><a href="communication.html">소통</a></li>
+                <li><a href="revu.html">체험단</a></li>
+                <li><a href="meeting.html">대면미팅</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="development_home.html">개발 관련 기여</a>
+              <ul class="depth2">
+                <li>
+                  <a href="corporate-governance.html">홈페이지 헤더 개선</a>
+                </li>
+                <li><a href="#">어드민 쇼츠 업로드</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">목표</a>
+              <ul class="depth2">
+                <li><a href="free-board.html">6-9월 목표</a></li>
+                <li><a href="qna-board.html">2025년 하반기 목표</a></li>
+              </ul>
+            </li>
           </ul>
-          <div class="m_lang_wrap">
-            <ul class="m_lang">
-              <li><a href="#" class="active">KOR</a></li>
-              <li><a href="#" class="eng">ENG</a></li>
+        </nav>
+        <div class="lang_wrap">
+          <div class="sns_wrap">
+            <a
+              href="https://blog.naver.com/dlsrnrk"
+              target="_blank"
+              class="blog"
+              ><img src="images/blog_icon.png" alt="블로그"
+            /></a>
+            <a
+              href="https://www.instagram.com/river.in9/"
+              target="_blank"
+              class="instagram"
+              ><img src="images/instagram_icon.png" alt="인스타그램"
+            /></a>
+          </div>
+          <ul class="lang">
+            <li><a href="#" class="active">KOR</a></li>
+            <li><a href="#" class="eng">ENG</a></li>
+          </ul>
+          <button type="button" class="open_btn">
+            <span class="blind">메뉴 열기</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <aside class="m_gnb_wrap">
+          <div class="scroll">
+            <ul class="m_gnb">
+              <li>
+                <a href="introduction.html">강인구 매니저</a>
+                <ul class="depth2">
+                  <li><a href="introduction.html">소개</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="meeting.html">성과</a>
+                <ul class="depth2">
+                  <li><a href="communication.html">소통</a></li>
+                  <li><a href="revu.html">체험단</a></li>
+                  <li><a href="meeting.html">대면미팅</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="corporate-governance.html">개발 관련 기여</a>
+                <ul class="depth2">
+                  <li>
+                    <a href="corporate-governance.html">홈페이지 헤더 개선</a>
+                  </li>
+                  <li><a href="#">어드민 쇼츠 업로드</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">목표</a>
+                <ul class="depth2">
+                  <li><a href="free-board.html">6-9월 목표</a></li>
+                  <li><a href="qna-board.html">2025년 하반기 목표</a></li>
+                </ul>
+              </li>
             </ul>
-          </div>
-        </div>
-        <button type="button" class="close_btn">
-          <span class="blind">메뉴 닫기</span>
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </aside>
-    </header>
-    <main id="container">
-      <section class="main_video">
-        <h2 class="blind">메인 비디오</h2>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <video src="video/test1.mp4" muted autoplay playsinline></video>
-            </div>
-            <div class="swiper-slide">
-              <video src="video/test2.mp4" muted autoplay playsinline></video>
-            </div>
-            <div class="swiper-slide">
-              <video src="video/test3.mp4" muted playsinline></video>
+            <div class="m_lang_wrap">
+              <ul class="m_lang">
+                <li><a href="#" class="active">KOR</a></li>
+                <li><a href="#" class="eng">ENG</a></li>
+              </ul>
             </div>
           </div>
-          <div class="pagination_wrap">
-            <!-- 간단한 태그(.page_num) 작성 가능하여 2개의 pagination 작성하는 대신 1개 작성 -->
-            <!-- <div class="swiper-pagination pagination_number"></div> -->
-            <div class="page_num">
-              <span class="current">01</span>
-              /
-              <span class="total">03</span>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-scrollbar"></div>
-          </div>
-        </div>
-      </section>
-      <section class="main_intro">
-        <div class="tit_wrap">
-          <h2>
-            <span>We Make People Better</span>
-            <strong>Jalib Marketing</strong>
-          </h2>
-        </div>
-        <div class="inner">
-          <div class="col_left">
-            <p>우리는 더 좋은 세상을 만들고<br>선한 영향력을 보여주기 위해 모였습니다.</p>
-            <p>대표님이 경영에 온전히 집중하실 수 있도록,<br> 자립마케팅이 한마음 한뜻으로 동행합니다.</p>
-            <p>자립마케팅의 방식으로<br>더 좋은 세상을 만듭니다.</p>
-          </div>
-          <div class="col_right">
-            <img src="images/reps.jpg" alt="메인 이미지">
-          </div>
-        </div>
-      </section>
-      <section class="main_worker">
-        <div class="inner">
-          <h2>Who we are</h2>
+          <button type="button" class="close_btn">
+            <span class="blind">메뉴 닫기</span>
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </aside>
+      </header>
+      <main id="container">
+        <section class="main_video">
+          <h2 class="blind">메인 비디오</h2>
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="col_left">
-                  <img src="images/yuna.png" alt="김유나 님">
-                </div>
-                <div class="col_right">
-                  <div class="tit_wrap">
-                    <span>General Manager.</span>
-                    <h3>
-                      <strong>김유나 님</strong>
-                      <span>영업관리본부 본부장</span>
-                    </h3>
-                  </div>
-                  <div class="txt_wrap">
-                    <strong>“자립마케팅의 '남자' 엔돌핀”</strong>
-                    <p class>
-                      강 : 강한 집중력으로 업무에 몰입하며<br>
-                      인 : 인정받는 실력과 따뜻한 미소의 소유자<br>
-                      구 : 구성원 모두에게 긍정적인 에너지를 주는 팀원<br>
-                      </p>
-                  </div>
-                </div>
+                <video src="video/test1.mp4" muted autoplay playsinline></video>
               </div>
               <div class="swiper-slide">
-                <div class="col_left">
-                  <img src="images/beom.png" alt="박용범 님">
-                </div>
-                <div class="col_right">
-                  <div class="tit_wrap">
-                    <span>Manager.</span>
-                    <h3>
-                      <strong>박용범 님</strong>
-                      <span>영업관리본부/컨텐츠팀</span>
-                    </h3>
-                  </div>
-                  <div class="txt_wrap">
-                    <strong>“어쩌면 '강'씨들은 인류최'강'이 아닐까?”</strong>
-                    <p>
-                      첫 날부터 싱글생글 웃는 얼굴<br>
-                      멘트 하나하나 놓치지 않고 체크하는 꼼꼼함<br>
-                      마케팅회의에서 보여주신 무서운 끈기와 열정까지<br>
-                      <br>
-                      <p class="bold">강 씨들은 앞에 '최'를 숨기고 있는 것이 아닐까요?</p>
-                    </p>
-                  </div>
-                </div>
+                <video src="video/test2.mp4" muted autoplay playsinline></video>
               </div>
               <div class="swiper-slide">
-                <div class="col_left">
-                  <img src="images/ho.png" alt="이호석 님">
-                </div>
-                <div class="col_right">
-                  <div class="tit_wrap">
-                    <span>Manager.</span>
-                    <h3>
-                      <strong>이호석 님</strong>
-                      <span>영업관리본부/숙박업종 총괄</span>
-                    </h3>
-                  </div>
-                  <div class="txt_wrap">
-                    <strong>“자립의 쌍두마차가 되겠습니다”</strong>
-                    <p>
-                      각자의 장점이 서로의 약점을 보완하는 존재,<br>
-                      계속해서 달려나갈수 있는 파트너같은 존재가 되도록 노력해 보아요.
-                      </p>
-                  </div>
-                </div>
+                <video src="video/test3.mp4" muted playsinline></video>
               </div>
             </div>
-            <div class="btn_wrap">
-              <div class="swiper-button-prev arrow_btn">prev</div>
-              <span class="bar"></span>
-              <div class="swiper-button-next arrow_btn">next</div>
+            <div class="pagination_wrap">
+              <!-- 간단한 태그(.page_num) 작성 가능하여 2개의 pagination 작성하는 대신 1개 작성 -->
+              <!-- <div class="swiper-pagination pagination_number"></div> -->
+              <div class="page_num">
+                <span class="current">01</span>
+                /
+                <span class="total">03</span>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-scrollbar"></div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="main_news">
-        <div class="inner">
-          <h2>News</h2>
-          <ul class="news">
-            <li>
-              <a href="https://theviewers.co.kr/View.aspx?No=3199613" target="_blank" title="새창 열림">
-                <div class="img_wrap">
-                  <img src="images/news_01.jpg" alt="#">
-                </div>
-              </a>
-              <div class="txt_wrap">
-                <div class="category">
-                  <a href="#">자립마케팅</a>
-                  <span>2024.05.30</span>
-                </div>
-                <a class="tit" href="#">
-                  (주)자립마케팅, 직원 대상 '결과 보고' 진행... 멈추지 않고 성장중...
-                </a>
-                <p class="txt">
-                  ‘(주)자립마케팅’이 전 직원 대상으로 결과 보고를 진행했다. 1등에게는 상금 500만원과 특진이 부여됐다.
-                </p>
-              </div>
-            </li>
-            <li>
-              <a href="https://theviewers.co.kr/View.aspx?No=3199613" target="_blank" title="새창 열림">
-                <div class="img_wrap">
-                  <img src="images/team_jalib.jpg" alt="#">
-                </div>
-              </a>
-              <div class="txt_wrap">
-                <div class="category">
-                  <a href="#">자립 마케팅</a>
-                  <span>2024.05.22</span>
-                </div>
-                <a class="tit" href="https://theviewers.co.kr/View.aspx?No=3199613" target="_blank" title="새창 열림">
-                  (주)자립마케팅, 단체 사진 촬영... "기쁨을 전합니다"
-                </a>
-                <p class="txt">
-                  (주)자립마케팅이 전 직원 단체 사진 촬영을 성공리에 마쳤다. 기쁨과 웃음이 가득한 임직원들은 제휴점들에게 기쁨을 전하고 싶다고 입모아 말했다.
-                </p>
-              </div>
-            </li>
-            <li>
-              <a href="https://theviewers.co.kr/View.aspx?No=3199613" target="_blank" title="새창 열림">
-                <div class="img_wrap">
-                  <img src="images/news_03.jpg" alt="#">
-                </div>
-              </a>
-              <div class="txt_wrap">
-                <div class="category">
-                  <a href="#">강인구 매니저</a>
-                  <span>2024.05.19</span>
-                </div>
-                <a class="tit" href="https://theviewers.co.kr/View.aspx?No=3199613" target="_blank" title="새창 열림">
-                  '역대 최단기' 대면 미팅 참여, 휘트니스클럽S 동탄 대표 만족···
-                </a>
-                <p class="txt">
-                  강인구 매니저가 자립마케팅 역사 최초로 입사 한 달 만에 대면 미팅에 참여하였다. 휘트니스클럽S 동탄 주용하 대표는 자립마케팅 대면 미팅에서 감격했다고 전했다.
-                </p>
-              </div>
-            </li>
-          </ul>
-          <a href="#" class="more_btn">more</a>
-        </div>
-      </section>
-      <section class="main_careers">
-        <div class="inner">
-          <h2>Contact Us</h2>
-          <img src="images/team_jalib.jpg" alt="커리어">
-          <div class="txt_box">
-            <p>
-              대표님의 든든한 마케팅팀이 되어<br>
-              한마음, 한뜻으로 동행하고 싶습니다.
-            </p>
-          </div>
-          <a href="https://marketing.jalib.site/board/board_list.html?board=jalib_request&home_no=288&menu_no=7348" class="more_btn">문의하기</a>
-        </div>
-      </section>
-    </main>
-    <footer id="footer">
-      <div class="inner">
-        <div class="footer_top">
-          <div class="col_left">
-            <h2 class="logo">
-              <a href="index.html">
-                <img src="images/main_logo.png" alt="넥슨">
-              </a>
+        </section>
+        <section class="main_intro">
+          <div class="tit_wrap">
+            <h2>
+              <span>We Make People Better</span>
+              <strong>Jalib Marketing</strong>
             </h2>
-            <div class="footer_info_wrap">
-              <p class="address">
-                자립 마케팅<br>
-                서울시 성동구 마조로47 양광빌딩 5층
+          </div>
+          <div class="inner">
+            <div class="col_left">
+              <p>
+                우리는 더 좋은 세상을 만들고<br />선한 영향력을 보여주기 위해
+                모였습니다.
               </p>
-              <p class="address">
-                official@jalib.co.kr<br>
-                010-4956-5637
+              <p>
+                대표님이 경영에 온전히 집중하실 수 있도록,<br />
+                자립마케팅이 한마음 한뜻으로 동행합니다.
               </p>
+              <p>자립마케팅의 방식으로<br />더 좋은 세상을 만듭니다.</p>
+            </div>
+            <div class="col_right">
+              <img src="images/reps.jpg" alt="메인 이미지" />
             </div>
           </div>
-          <div class="col_right">
-            <ul class="footer_menu">
+        </section>
+        <section class="main_worker">
+          <div class="inner">
+            <h2>Who we are</h2>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="col_left">
+                    <img src="images/yuna.png" alt="김유나 님" />
+                  </div>
+                  <div class="col_right">
+                    <div class="tit_wrap">
+                      <span>General Manager.</span>
+                      <h3>
+                        <strong>김유나 님</strong>
+                        <span>영업관리본부 본부장</span>
+                      </h3>
+                    </div>
+                    <div class="txt_wrap">
+                      <strong>“자립마케팅의 '남자' 엔돌핀”</strong>
+                      <p class>
+                        강 : 강한 집중력으로 업무에 몰입하며<br />
+                        인 : 인정받는 실력과 따뜻한 미소의 소유자<br />
+                        구 : 구성원 모두에게 긍정적인 에너지를 주는 팀원<br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="col_left">
+                    <img src="images/beom.png" alt="박용범 님" />
+                  </div>
+                  <div class="col_right">
+                    <div class="tit_wrap">
+                      <span>Manager.</span>
+                      <h3>
+                        <strong>박용범 님</strong>
+                        <span>영업관리본부/컨텐츠팀</span>
+                      </h3>
+                    </div>
+                    <div class="txt_wrap">
+                      <strong>“어쩌면 '강'씨들은 인류최'강'이 아닐까?”</strong>
+                      <p>
+                        첫 날부터 싱글생글 웃는 얼굴<br />
+                        멘트 하나하나 놓치지 않고 체크하는 꼼꼼함<br />
+                        마케팅회의에서 보여주신 무서운 끈기와 열정까지<br />
+                        <br />
+                        <em class="bold"
+                          >강 씨들은 앞에 '최'를 숨기고 있는 것이 아닐까요?</em
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="col_left">
+                    <img src="images/ho.png" alt="이호석 님" />
+                  </div>
+                  <div class="col_right">
+                    <div class="tit_wrap">
+                      <span>Manager.</span>
+                      <h3>
+                        <strong>이호석 님</strong>
+                        <span>영업관리본부/숙박업종 총괄</span>
+                      </h3>
+                    </div>
+                    <div class="txt_wrap">
+                      <strong>“자립의 쌍두마차가 되겠습니다”</strong>
+                      <p>
+                        각자의 장점이 서로의 약점을 보완하는 존재,<br />
+                        계속해서 달려나갈수 있는 파트너같은 존재가 되도록 노력해
+                        보아요.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <div class="swiper-button-prev arrow_btn">prev</div>
+                <span class="bar"></span>
+                <div class="swiper-button-next arrow_btn">next</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main_news">
+          <div class="inner">
+            <h2>News</h2>
+            <ul class="news">
               <li>
-                <a href="#">넥슨게임즈</a>
-                <ul class="menu_list">
-                  <li><a href="#">넥슨게임즈</a></li>
-                </ul>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="images/news_01.jpg" alt="#" />
+                  </div>
+                </a>
+                <div class="txt_wrap">
+                  <div class="category">
+                    <a href="#">자립마케팅</a>
+                    <span>2024.05.30</span>
+                  </div>
+                  <a class="tit" href="#">
+                    (주)자립마케팅, 직원 대상 '결과 보고' 진행... 멈추지 않고
+                    성장중...
+                  </a>
+                  <p class="txt">
+                    ‘(주)자립마케팅’이 전 직원 대상으로 결과 보고를 진행했다.
+                    1등에게는 상금 500만원과 특진이 부여됐다.
+                  </p>
+                </div>
               </li>
               <li>
-                <a href="#">게임</a>
-                 <ul class="menu_list">
-                  <li><a href="#">V4</a></li>
-                  <li><a href="#">서든어택</a></li>
-                  <li><a href="#">블루 아카이브</a></li>
-                  <li><a href="#">히트2</a></li>
-                  <li><a href="#">퍼스트 디센던트</a></li>
-                  <li><a href="#">갓썸</a></li>
-                </ul>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="images/team_jalib.jpg" alt="#" />
+                  </div>
+                </a>
+                <div class="txt_wrap">
+                  <div class="category">
+                    <a href="#">자립 마케팅</a>
+                    <span>2024.05.22</span>
+                  </div>
+                  <a class="tit" href="#">
+                    (주)자립마케팅, 단체 사진 촬영... "기쁨을 전합니다"
+                  </a>
+                  <p class="txt">
+                    (주)자립마케팅이 전 직원 단체 사진 촬영을 성공리에 마쳤다.
+                    기쁨과 웃음이 가득한 임직원들은 제휴점들에게 기쁨을 전하고
+                    싶다고 입모아 말했다.
+                  </p>
+                </div>
               </li>
               <li>
-                <a href="#">인재채용</a>
-                <ul class="menu_list">
-                  <li><a href="#">기업문화</a></li>
-                  <li><a href="#">피플&amp;컬처</a></li>
-                  <li><a href="#">복지</a></li>
-                  <li><a href="#">채용</a></li>
-                </ul>
-              </li>
-               <li>
-                <a href="corporate-governance.html">투자정보</a>
-                <ul class="menu_list">
-                  <li><a href="corporate-governance.html">기업지배구조</a></li>
-                  <li><a href="#">주가정보</a></li>
-                  <li><a href="#">재무정보</a></li>
-                  <li><a href="#">공시/실적</a></li>
-                  <li><a href="account-list.html">공고</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">미디어</a>
-                <ul class="menu_list">
-                  <li><a href="#">뉴스</a></li>
-                  <li><a href="#">보도자료</a></li>
-                  <li><a href="#">멀티미디어</a></li>
-                </ul>
+                <a href="#">
+                  <div class="img_wrap">
+                    <img src="images/news_03.jpg" alt="#" />
+                  </div>
+                </a>
+                <div class="txt_wrap">
+                  <div class="category">
+                    <a href="#">강인구 매니저</a>
+                    <span>2024.05.19</span>
+                  </div>
+                  <a class="tit" href="#">
+                    '역대 최단기' 대면 미팅 참여, 휘트니스클럽S 동탄 대표
+                    만족···
+                  </a>
+                  <p class="txt">
+                    강인구 매니저가 자립마케팅 역사 최초로 입사 한 달 만에 대면
+                    미팅에 참여하였다. 휘트니스클럽S 동탄 주용하 대표는
+                    자립마케팅 대면 미팅에서 감격했다고 전했다.
+                  </p>
+                </div>
               </li>
             </ul>
+            <a href="#" class="more_btn">more</a>
           </div>
-        </div>
-        <div class="footer_bottom">
-          <p class="copyright">©Jalib Marketing All Rights Reserved.</p>
-          <div class="family_wrap">
-          <button type="button" class="family_btn">
-            관련사이트
-          </button>
-            <ul class="family">
-              <li><a href="#">자립어드민</a></li>
-              <li><a href="#">자립메일</a></li>
-              <li><a href="#">플로우</a></li>
-              <li><a href="#">네이버스마트플레이스</a></li>
-            </ul>
+        </section>
+        <section class="main_careers">
+          <div class="inner">
+            <h2>Contact Us</h2>
+            <img src="images/team_jalib.jpg" alt="커리어" />
+            <div class="txt_box">
+              <p>
+                대표님의 든든한 마케팅팀이 되어<br />
+                한마음, 한뜻으로 동행하고 싶습니다.
+              </p>
+            </div>
+            <a
+              href="https://marketing.jalib.site/board/board_list.html?board=jalib_request&home_no=288&menu_no=7348"
+              class="more_btn"
+              >문의하기</a
+            >
           </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="inner">
+          <div class="footer_top">
+            <div class="col_left">
+              <h2 class="logo">
+                <a href="index.html">
+                  <img src="images/main_logo.png" alt="넥슨" />
+                </a>
+              </h2>
+              <div class="footer_info_wrap">
+                <p class="address">
+                  자립 마케팅<br />
+                  서울시 성동구 마조로47 양광빌딩 5층
+                </p>
+                <p class="address">
+                  official@jalib.co.kr<br />
+                  010-4956-5637
+                </p>
+              </div>
+            </div>
+            <div class="col_right">
+              <ul class="footer_menu">
+                <li>
+                  <a href="introduction.html">강인구 매니저</a>
+                  <ul class="menu_list">
+                    <li><a href="introduction.html">소개</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="communication.html">성과</a>
+                  <ul class="menu_list">
+                    <li><a href="communication.html">소통</a></li>
+                    <li><a href="revu.html">체험단</a></li>
+                    <li><a href="meeting.html">대면미팅</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">개발 관련 기여</a>
+                  <ul class="menu_list">
+                    <li><a href="#">홈페이지 헤더 개선</a></li>
+                    <li><a href="#">어드민 쇼츠 업로드</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="corporate-governance.html">목표</a>
+                  <ul class="menu_list">
+                    <li>
+                      <a href="corporate-governance.html">6-9월 목표</a>
+                    </li>
+                    <li><a href="#">2025년 하반기 목표</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_bottom">
+            <p class="copyright">©Jalib Marketing All Rights Reserved.</p>
+            <div class="family_wrap">
+              <button type="button" class="family_btn">관련사이트</button>
+              <ul class="family">
+                <li><a href="#">자립어드민</a></li>
+                <li><a href="#">자립메일</a></li>
+                <li><a href="#">플로우</a></li>
+                <li><a href="#">네이버스마트플레이스</a></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="top_btn">
+            <span class="blind">위로 이동</span>
+            TOP
+          </a>
         </div>
-        <a href="#" class="top_btn">
-          <span class="blind">위로 이동</span>
-          TOP
-        </a>
-      </div>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
