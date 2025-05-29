@@ -479,6 +479,12 @@
 
 
   /* 모바일 추가 25.05.29 */
+  .contents .profile {
+    padding: 0;
+  }
+  .contents .profile .col_left {
+    padding-top: 0;
+  }
   .sub_container .tit_wrap .work_total p {
     font-size: 16px;
   }

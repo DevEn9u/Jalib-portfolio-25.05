@@ -1042,9 +1042,8 @@
   }
   #header .logo {
     left: 10px;
-  }
-  #header .logo img {
-    height: 35px;
+    width: 42px;
+    height: 42px;
   }
 
   #header .lang_wrap {
@@ -1138,7 +1137,6 @@
     width: 100%;
   }
   .main_intro .col_right img {
-    padding-left: 80px;
     max-width: 100%;
   }
 

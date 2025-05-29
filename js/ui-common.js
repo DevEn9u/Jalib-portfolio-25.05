@@ -20,7 +20,10 @@ $(function () {
   });
 
   // a 태그 해제
-  $("#container").on("click", function (e) {
+  $("#footer").on("click", function (e) {
+    e.preventDefault();
+  });
+  $(".news").on("click", function (e) {
     e.preventDefault();
   });
 
