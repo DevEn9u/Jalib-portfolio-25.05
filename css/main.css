@@ -988,6 +988,10 @@
     height: 20px;
     margin-bottom: 19px;
   }
+    #footer .logo img {
+      width: 42px;
+      height: 42px;
+    }
   #footer .address {
     font-size: 8px;
   }
@@ -1300,6 +1304,10 @@
     width: 59px;
     height: 19px;
   }
+   #footer .logo img {
+    width: 32px;
+    height: 32px;
+   }
   #footer .address {
     font-size: 11px;
     margin-bottom: 6px;
