@@ -59,7 +59,7 @@
   vertical-align: top;
 }
 .contents .tit_wrap .work_total #day_count {
-  font-size: 22px;
+  font-size: 42px;
   letter-spacing: -2px;
   font-weight: 600;
 }
@@ -68,23 +68,70 @@
   justify-content: space-between;
   padding: 40px 0;
 }
+.contents .introduction {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
 .contents .profile .col_left {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .contents .profile .col_left p {
-
   font-size: 30px;
   padding-bottom: 55px;
   line-height: 1.6;
   font-weight: 500;
   color: var(--txt-color-600);
 }
+
 .contents .profile .col_right {
   width: calc(50% - 5px);
 }
+/* 진심 공통 */
+.achievement .col_left {
+  padding-top: 50px;
+}
+.achievement .col_left img {
+  width: 85%;
+}
 
+.achievement .profile .col_right p {
+  font-size: 30px;
+  padding-bottom: 55px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--txt-color-600);
+}
 
+/* 진심 - 체험단 */
+.revu {
+  display: flex;
+  gap: 0 10px;
+}
+.achievement .description {
 
+  margin-top: 30px;
+}
+.achievement .description p {
+  padding-top: 20px;
+  font-size: 26px;
+  padding-bottom: 55px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--txt-color-600);
+}
+
+/* 진심 - 대면미팅 */
+.achievement .meeting {
+  flex-direction: column;
+}
+.achievement .meeting .col_left img {
+  width: 100%;
+  padding: 10px 0;
+}
+.achievement .meeting .col_right {
+  width: auto;
+}
 /* 기업지배구조 corporate-governance */
 .sub_top .inner {
   max-width: 1320px;

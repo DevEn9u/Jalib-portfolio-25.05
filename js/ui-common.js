@@ -46,7 +46,7 @@ $(function () {
     loop: true,
     watchSlidesProgress: true,
     autoplay: {
-      delay: 15000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -141,7 +141,7 @@ $(function () {
     const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
     let current = 0;
 
-    const duration = 1000; // 전체 애니메이션 시간 (ms)
+    const duration = 1500; // 전체 애니메이션 시간 (ms)
     const frameRate = 60; // 초당 프레임
     const totalFrames = Math.round((duration / 1000) * frameRate);
     const increment = diffDays / totalFrames;
