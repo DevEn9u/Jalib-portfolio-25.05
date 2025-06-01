@@ -20,9 +20,9 @@ $(function () {
   });
 
   // a 태그 해제
-  $("#footer").on("click", function (e) {
-    e.preventDefault();
-  });
+  // $("#footer").on("click", function (e) {
+  //   e.preventDefault();
+  // });
   $(".news").on("click", function (e) {
     e.preventDefault();
   });
